@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DSOHashery.h"
+#import <DSOHashery/DSOHashery.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
