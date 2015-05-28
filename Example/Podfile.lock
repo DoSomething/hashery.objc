@@ -1,0 +1,14 @@
+PODS:
+  - hashery.objc (0.1.0)
+
+DEPENDENCIES:
+  - hashery.objc (from `../`)
+
+EXTERNAL SOURCES:
+  hashery.objc:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  hashery.objc: 06658e9fd116ddfe97db46fc718426bd3d2d90fa
+
+COCOAPODS: 0.37.2

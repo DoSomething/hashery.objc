@@ -13,6 +13,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		B8FD7E8069FECF4A417DFB2F /* Pods_hashery_objc_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4522C778CFCF430B738C94F8 /* Pods_hashery_objc_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EA7C95AC1B17A78E00975F61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C95A91B17A78E00975F61 /* main.m */; };
+		EA7C95AD1B17A78E00975F61 /* DSOHashery.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C95AB1B17A78E00975F61 /* DSOHashery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		8E02F8441305CB5660567314 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		951643FBF601E0BF31AAFFB2 /* Pods-hashery.objc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashery.objc_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hashery.objc_Tests/Pods-hashery.objc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4EB4BF691E6211EC9B517C0 /* Pods-hashery.objc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashery.objc_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hashery.objc_Tests/Pods-hashery.objc_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EA7C95A91B17A78E00975F61 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA7C95AA1B17A78E00975F61 /* DSOHashery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSOHashery.h; sourceTree = "<group>"; };
+		EA7C95AB1B17A78E00975F61 /* DSOHashery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSOHashery.m; sourceTree = "<group>"; };
 		FE876532168F769526A41FE5 /* hashery.objc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = hashery.objc.podspec; path = ../hashery.objc.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +56,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				EA7C95A81B17A74800975F61 /* Hashery */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -115,6 +121,16 @@
 				C4EB4BF691E6211EC9B517C0 /* Pods-hashery.objc_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA7C95A81B17A74800975F61 /* Hashery */ = {
+			isa = PBXGroup;
+			children = (
+				EA7C95A91B17A78E00975F61 /* main.m */,
+				EA7C95AA1B17A78E00975F61 /* DSOHashery.h */,
+				EA7C95AB1B17A78E00975F61 /* DSOHashery.m */,
+			);
+			name = Hashery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7C95AD1B17A78E00975F61 /* DSOHashery.m in Sources */,
+				EA7C95AC1B17A78E00975F61 /* main.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

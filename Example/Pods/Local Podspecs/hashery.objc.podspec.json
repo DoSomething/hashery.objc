@@ -1,0 +1,25 @@
+{
+  "name": "hashery.objc",
+  "version": "0.1.0",
+  "summary": "A short description of hashery.objc.",
+  "description": "                       An optional longer description of hashery.objc\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/hashery.objc",
+  "license": "MIT",
+  "authors": {
+    "Tong Xiang": "tong.xiang2@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/hashery.objc.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "hashery.objc": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
