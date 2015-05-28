@@ -212,7 +212,12 @@
         result += n * pow(_base, power);
     }
     
-    NSLog(@"original base-10 number is: %lg", (long)result);
+
+
+
+
+    
+    NSLog(@"original base-10 number is: %ld", (long)result);
     return result;
 }
 
