@@ -10,18 +10,51 @@
 Pod::Spec.new do |s|
   s.name             = "hashery.objc"
   s.version          = "0.1.0"
-  s.summary          = "A short description of hashery.objc."
+  s.summary          = "A library which converts numbers into human-readable word combinations."
   s.description      = <<-DESC
-                       An optional longer description of hashery.objc
+                  
+#### Use Cases 
+Useful for generating easy-to-remember unique passcodes. 
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+#### How to use it
+
+- Create sets of words. These are not provided to you by the library.
+
+Creates an array of arrays. The number of arrays within the array becomes the number of words in the hash string. Each array needs to have the same number of words. 
+```
+        NSArray *wordArray = @[
+            @[@"big", @"tall", @"short", @"husky"],
+            @[@"orange", @"grey", @"purple", @"vermilion"],
+            @[@"monkey", @"sloth", @"giraffe", @"dolphin"]
+        ];
+```
+
+Instantiates a hashery object. 
+```
+        DSOHashery *hashery = [[DSOHashery alloc] init];
+```
+
+Sets the hashery object to use the wordArray. 
+```
+        [hashery setWordArrayLists:wordArray];
+```
+
+Encodes `13` into a unique string. 
+```    
+        [hashery encodeBase10ToUniqueString:13];
+```
+
+Decodes a unique string into an integer. 
+```    
+        [hashery decodeUniqueStringToBase10:@"bigvermilionsloth"];
+```
+---
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/hashery.objc"
+  s.homepage         = "https://github.com/DoSomething/hashery.objc"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Tong Xiang" => "tong.xiang2@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/hashery.objc.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/DoSomething/hashery.objc.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
