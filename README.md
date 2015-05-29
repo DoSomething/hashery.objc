@@ -22,7 +22,7 @@ pod "hashery.objc"
 
 ## Author
 
-Tong Xiang, tong.xiang2@gmail.com
+Tong Xiang, txiang@dosomething.org
 
 ## License
 
