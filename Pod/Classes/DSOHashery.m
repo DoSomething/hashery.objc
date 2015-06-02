@@ -72,7 +72,6 @@
         base *= _base;
     }
     _maxIntegerValueOfHash = base - 1;
-    NSLog(@"_maxIntegerValueOfHash: %zd", _maxIntegerValueOfHash);
     return YES;
 }
 
@@ -83,7 +82,6 @@
  */
 - (NSInteger)getMaxIntegerValueOfHash
 {
-    NSLog(@"_maxIntegerValueOfHash within getMaxIntegerValueOfHash: %zd", _maxIntegerValueOfHash);
     return _maxIntegerValueOfHash;
 }
 
@@ -101,7 +99,6 @@
     
     NSMutableArray *baseConverted = [self convertBase10IntegerToArrayContainingNewBaseNumbers:val];
     NSString *result = [self convertArrayOfBaseNumbersToWordString:baseConverted];
-    NSLog(@"main function returns: %@", result);
     return result;
 }
 
@@ -212,11 +209,6 @@
         result += n * pow(_base, power);
     }
     
-
-
-
-
-
     return result;
 }
 
